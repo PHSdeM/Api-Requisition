@@ -29,7 +29,8 @@ method: "GET",
              cryptoCoins += `<td> ${coin.tier} </td>`;
              cryptoCoins += `<td> ${coin.name} </td>`;
              cryptoCoins += `<td>$${Math.round(coin.price)} Billion </td>`;
-             cryptoCoins += `<td> ${coin.symbol} </td>`; "<tr>";
+             cryptoCoins += `<td> ${coin.symbol} </td>`; 
+             cryptoCoins += `<td> ${coin.change} </td>`; "<tr>";
            })
             document.getElementById("data").innerHTML = cryptoCoins
         })
